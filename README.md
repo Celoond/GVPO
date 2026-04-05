@@ -69,9 +69,7 @@ pip install -r requirements.txt
 - The `verl` environment is used for training.
 - The `AppWorld` environment is used for the execution backend.
 
-The AppWorld setup should follow the official AppWorld repository:
-
-- AppWorld repository: `TODO: add AppWorld URL here`
+The AppWorld setup should follow the [official AppWorld repository](https://github.com/StonyBrookNLP/appworld).
 
 The scripts should be launched in their corresponding environments:
 
@@ -115,3 +113,15 @@ Backend startup settings are exposed in `startappworld.sh`, including:
 - This repository assumes a local AppWorld deployment is available.
 - Redis must be running for the trainer and workers to communicate.
 - The project contains custom PPO variants and custom rollout logic on top of upstream `verl`.
+
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@inproceedings{dai2026group,
+  title={Group Verification-based Policy Optimization for Interactive Coding Agents},
+  author={Dai, Silong and Sun, Changzhi and Wu, Haolun and Zheng, Huanran and Ji, Tao and Yan, Junchi and Wu, Yuanbin and Zhang, Dell and Wang, Xiaoling and Li, Xuelong},
+  booktitle={The Fourteenth International Conference on Learning Representations},
+  year={2026}
+}
